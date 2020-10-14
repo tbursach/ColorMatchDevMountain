@@ -11,5 +11,5 @@ class UserScoreController {
     
     static let shared = UserScoreController()
     
-    var scores: [Score] = []
+    var scores: [UserScore] = []
 }
