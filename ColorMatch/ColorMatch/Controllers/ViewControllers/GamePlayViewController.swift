@@ -8,22 +8,41 @@
 import UIKit
 
 class GamePlayViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    var gameInt = 60
+    var gameTimer = Timer()
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        initalizeGameTimer()
     }
-    */
-
+    
+    
+    func initalizeGameTimer() {
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GamePlayViewController.game), userInfo: nil, repeats: true)
+        gameInt = 60
+        //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
+    }
+    
+    @objc func game() {
+         gameInt -= 1
+         //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
+        
+        if gameInt == 0 {
+            
+            gameTimer.invalidate()
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GamePlayViewController.gameEnds), userInfo: nil, repeats: false)
+            
+        }
+    }
+    
+    @objc func gameEnds() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
+        self.present(vc, animated: false, completion: nil)
+    }
 }
+
+    
