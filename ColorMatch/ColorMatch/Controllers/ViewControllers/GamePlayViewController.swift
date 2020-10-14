@@ -9,24 +9,6 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
-    //MARK: - Outlets
-    
-    @IBOutlet weak var currentScoreLabel: UILabel!
-    @IBOutlet weak var timeRemainingLabel: UILabel!
-    @IBOutlet weak var colorLabel: UILabel!
-    @IBOutlet weak var buttonOne: UIButton!
-    @IBOutlet weak var buttonTwo: UIButton!
-    @IBOutlet weak var buttonThree: UIButton!
-    @IBOutlet weak var buttonFour: UIButton!
-    @IBOutlet weak var buttonFive: UIButton!
-    @IBOutlet weak var buttonSix: UIButton!
-    @IBOutlet weak var buttonSeven: UIButton!
-    @IBOutlet weak var buttonEight: UIButton!
-    @IBOutlet weak var buttonNine: UIButton!
-    
-    
-    
-    //MARK: - Properties
 
 
     var gameInt = 60
@@ -35,7 +17,6 @@ class GamePlayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         initalizeGameTimer()
     }
@@ -63,6 +44,7 @@ class GamePlayViewController: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
         self.present(vc, animated: false, completion: nil)
     }
+<<<<<<< HEAD
 
     
     //MARK: - Actions
@@ -97,6 +79,8 @@ class GamePlayViewController: UIViewController {
     
     
 
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
 }
 
     

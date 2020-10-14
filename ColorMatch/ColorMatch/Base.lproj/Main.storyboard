@@ -10,13 +10,16 @@
         <!--Color Match-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="762-hQ-F7x">
                                 <rect key="frame" x="169" y="399" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,6 +43,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 =======
 =======
 
@@ -97,6 +101,11 @@
 =======
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                     </view>
                     <navigationItem key="navigationItem" title="Color Match" id="XJw-U6-hgE"/>
                     <connections>
@@ -107,13 +116,14 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="103.79464285714285"/>
         </scene>
-        <!--High Score View Controller-->
+        <!--View Controller-->
         <scene sceneID="Pse-PI-7qH">
             <objects>
-                <viewController id="2el-tJ-aat" customClass="HighScoreViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2el-tJ-aat" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLP-DQ-BfH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -157,12 +167,16 @@
 =======
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ncu-rw-Jvj"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                     </view>
                     <navigationItem key="navigationItem" id="sJH-nl-Xta"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAF-6J-wCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="762.72321428571422"/>
+            <point key="canvasLocation" x="1051" y="763"/>
         </scene>
         <!--Game Play View Controller-->
         <scene sceneID="3Pd-py-Wqu">
@@ -172,9 +186,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-kW-htE">
-                                <rect key="frame" x="20.5" y="433.5" width="373" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Remaining: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-2j-bj4">
+                                <rect key="frame" x="142" y="111" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-kW-htE">
+                                <rect key="frame" x="20" y="433" width="374" height="30"/>
                                 <subviews>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
@@ -189,11 +211,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="29"/>
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonOneTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="kZU-L5-Vfh"/>
-                                        </connections>
                                     </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
@@ -208,11 +232,13 @@
                                         <rect key="frame" x="163" y="0.0" width="46" height="29"/>
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
+                                        <rect key="frame" x="164" y="0.0" width="46" height="30"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonTwoTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="8Kt-9e-bmB"/>
-                                        </connections>
                                     </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
@@ -227,15 +253,19 @@
                                         <rect key="frame" x="327" y="0.0" width="46" height="29"/>
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
+                                        <rect key="frame" x="328" y="0.0" width="46" height="30"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonThreeTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="1Zx-qd-lbw"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-9B-0uu">
                                 <rect key="frame" x="20" y="597" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,6 +299,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-ty-TkN">
                                 <rect key="frame" x="20" y="157" width="374" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
 =======
 =======
 
@@ -283,82 +314,16 @@
 =======
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="luw-mW-bf7">
-                                <rect key="frame" x="20.5" y="597.5" width="373" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-9B-0uu">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonFourTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="tFs-EB-bO2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrB-Yx-hfy">
-                                        <rect key="frame" x="163" y="0.0" width="46" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonFiveTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="wfm-nL-kWv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-nm-FtK">
-                                        <rect key="frame" x="327" y="0.0" width="46" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonSixTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="cNY-YF-Uol"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="CSa-fC-ebl">
-                                <rect key="frame" x="20.5" y="773.5" width="373" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJA-ai-p2z">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonSevenTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="vcd-Ea-pZx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdW-mI-5QT">
-                                        <rect key="frame" x="163" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonEightTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="9Uv-Rx-rs4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-pJ-eBn">
-                                        <rect key="frame" x="327" y="0.0" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="buttonNineTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="3EN-MP-bAG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="127" translatesAutoresizingMaskIntoConstraints="NO" id="9Fb-4s-fni">
-                                <rect key="frame" x="20.5" y="113" width="373" height="20.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Current Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gT-5n-sVX">
-                                        <rect key="frame" x="0.0" y="0.0" width="115.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Remaining: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-2j-bj4">
-                                        <rect key="frame" x="242.5" y="0.0" width="130.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="D3F-8i-XCD"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -391,37 +356,28 @@
 =======
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                     </view>
                     <navigationItem key="navigationItem" id="oun-DZ-MVM"/>
-                    <connections>
-                        <outlet property="buttonEight" destination="rdW-mI-5QT" id="vcO-Gg-ebc"/>
-                        <outlet property="buttonFive" destination="GrB-Yx-hfy" id="ekQ-OI-Nk0"/>
-                        <outlet property="buttonFour" destination="dCa-9B-0uu" id="M2o-Dd-NVa"/>
-                        <outlet property="buttonNine" destination="GnP-pJ-eBn" id="eM2-cU-cHW"/>
-                        <outlet property="buttonOne" destination="fA3-xC-OuK" id="Hsb-9f-Kkb"/>
-                        <outlet property="buttonSeven" destination="cJA-ai-p2z" id="vfH-xf-Jt3"/>
-                        <outlet property="buttonSix" destination="WdT-nm-FtK" id="eda-c1-kTG"/>
-                        <outlet property="buttonThree" destination="rd8-dx-CeW" id="YGa-P2-jJK"/>
-                        <outlet property="buttonTwo" destination="7T7-03-1MW" id="HpY-br-efZ"/>
-                        <outlet property="colorLabel" destination="JzX-ty-TkN" id="eIq-ZT-WOO"/>
-                        <outlet property="currentScoreLabel" destination="2gT-5n-sVX" id="LUw-XB-QCb"/>
-                        <outlet property="timeRemainingLabel" destination="WV7-2j-bj4" id="tut-NG-xQo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlH-Ok-Qmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1747.826086956522" y="103.79464285714285"/>
         </scene>
-        <!--Post Game View Controller-->
+        <!--View Controller-->
         <scene sceneID="bDO-jg-R9T">
             <objects>
-                <viewController id="WA1-4g-c4D" customClass="PostGameViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WA1-4g-c4D" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LnA-pc-clm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28e-VZ-2Is">
                                 <rect key="frame" x="165" y="98" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -446,6 +402,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
 =======
 =======
 
@@ -506,6 +463,11 @@
 =======
 
 >>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
+=======
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5pf-7L-IAc"/>
+>>>>>>> parent of 4afdfec... deleted some extra stuff
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro2-4p-3p5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
