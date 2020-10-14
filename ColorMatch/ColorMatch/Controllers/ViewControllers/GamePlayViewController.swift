@@ -9,6 +9,10 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
     //MARK: - Outlets
     
     @IBOutlet weak var currentScoreLabel: UILabel!
@@ -27,14 +31,43 @@ class GamePlayViewController: UIViewController {
     
     
     //MARK: - Properties
-    
-    
-    
 
+
+    var gameInt = 60
+    var gameTimer = Timer()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        initalizeGameTimer()
     }
+    
+    
+    func initalizeGameTimer() {
+        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GamePlayViewController.game), userInfo: nil, repeats: true)
+        gameInt = 60
+        //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
+    }
+    
+    @objc func game() {
+         gameInt -= 1
+         //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
+        
+        if gameInt == 0 {
+            
+            gameTimer.invalidate()
+            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GamePlayViewController.gameEnds), userInfo: nil, repeats: false)
+            
+        }
+    }
+    
+    @objc func gameEnds() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
+        self.present(vc, animated: false, completion: nil)
+    }
+
     
     //MARK: - Actions
     
@@ -67,7 +100,7 @@ class GamePlayViewController: UIViewController {
     
     
     
-    
-    
 
 }
+
+    
