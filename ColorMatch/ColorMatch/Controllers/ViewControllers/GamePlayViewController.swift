@@ -44,7 +44,7 @@ class GamePlayViewController: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
         self.present(vc, animated: false, completion: nil)
     }
-<<<<<<< HEAD
+
 
     
     //MARK: - Actions
@@ -79,8 +79,7 @@ class GamePlayViewController: UIViewController {
     
     
 
-=======
->>>>>>> parent of 4afdfec... deleted some extra stuff
+
 }
 
     

@@ -8,15 +8,14 @@
 import UIKit
 
 class MainScreenViewController: UIViewController {
-<<<<<<< HEAD
+ 
     
     //MARK: - Outlets
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
     //MARK: - Lifecycle Functions
-=======
->>>>>>> parent of 4afdfec... deleted some extra stuff
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ class MainScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-<<<<<<< HEAD
+
     //MARK: - Actions
     
     @IBAction func playGameButtonTapped(_ sender: Any) {
@@ -32,8 +31,8 @@ class MainScreenViewController: UIViewController {
     
     @IBAction func highScoresButtonTapped(_ sender: Any) {
     }
-} // END OF CLASS
-=======
+
+
 
     /*
     // MARK: - Navigation
@@ -46,4 +45,4 @@ class MainScreenViewController: UIViewController {
     */
 
 }
->>>>>>> parent of 4afdfec... deleted some extra stuff
+
