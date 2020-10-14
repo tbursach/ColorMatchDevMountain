@@ -11,7 +11,9 @@ class MainScreenViewController: UIViewController {
     
     //MARK: - Outlets
     
+    @IBOutlet weak var descriptionLabel: UILabel!
     
+    //MARK: - Lifecycle Functions
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +22,9 @@ class MainScreenViewController: UIViewController {
     
     //MARK: - Actions
     
+    @IBAction func playGameButtonTapped(_ sender: Any) {
+    }
     
-    
-    
-
-
-}
+    @IBAction func highScoresButtonTapped(_ sender: Any) {
+    }
+} // END OF CLASS

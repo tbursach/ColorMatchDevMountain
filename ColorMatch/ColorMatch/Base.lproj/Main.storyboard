@@ -29,6 +29,7 @@
                                         <rect key="frame" x="0.0" y="389" width="373" height="30"/>
                                         <state key="normal" title="Play Game"/>
                                         <connections>
+                                            <action selector="playGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rak-1l-KMC"/>
                                             <segue destination="ZCV-x3-9U3" kind="show" id="b4q-IO-U9j"/>
                                         </connections>
                                     </button>
@@ -36,6 +37,7 @@
                                         <rect key="frame" x="0.0" y="469" width="373" height="30"/>
                                         <state key="normal" title="High Scores"/>
                                         <connections>
+                                            <action selector="highScoresButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZaB-6G-Cs3"/>
                                             <segue destination="2el-tJ-aat" kind="show" id="NFf-kY-Yug"/>
                                         </connections>
                                     </button>
@@ -52,6 +54,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Color Match" id="XJw-U6-hgE"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="3ud-9P-dmI" id="ZQS-aO-9CL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
