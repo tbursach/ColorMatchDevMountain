@@ -9,6 +9,10 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
     //MARK: - Outlets
     
     @IBOutlet weak var currentScoreLabel: UILabel!
@@ -27,6 +31,7 @@ class GamePlayViewController: UIViewController {
     
     
     //MARK: - Properties
+
 
     var gameInt = 60
     var gameTimer = Timer()
@@ -62,6 +67,7 @@ class GamePlayViewController: UIViewController {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
         self.present(vc, animated: false, completion: nil)
     }
+
     
     //MARK: - Actions
     

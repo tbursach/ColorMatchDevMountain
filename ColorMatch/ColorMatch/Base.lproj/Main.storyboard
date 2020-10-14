@@ -16,6 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="762-hQ-F7x">
                                 <rect key="frame" x="169" y="399" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -40,6 +41,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
 =======
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dog-ZX-iXR">
                                 <rect key="frame" x="20.5" y="113" width="373" height="499"/>
                                 <subviews>
@@ -65,12 +69,20 @@
                                     </button>
                                 </subviews>
                             </stackView>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
 <<<<<<< HEAD
 =======
+=======
+
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dog-ZX-iXR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="E7I-8u-yKy"/>
@@ -78,7 +90,11 @@
                             <constraint firstItem="dog-ZX-iXR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oyG-aO-igN"/>
                             <constraint firstItem="dog-ZX-iXR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sba-FU-EKk"/>
                         </constraints>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                     </view>
                     <navigationItem key="navigationItem" title="Color Match" id="XJw-U6-hgE"/>
                 </viewController>
@@ -94,9 +110,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ncu-rw-Jvj"/>
 =======
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-mc-o7x">
                                 <rect key="frame" x="20.5" y="113" width="373" height="499"/>
@@ -127,7 +147,11 @@
                             <constraint firstItem="2gX-mc-o7x" firstAttribute="centerX" secondItem="eLP-DQ-BfH" secondAttribute="centerX" id="Rpd-5D-yYX"/>
                             <constraint firstItem="Ncu-rw-Jvj" firstAttribute="bottom" secondItem="2gX-mc-o7x" secondAttribute="bottom" constant="250" id="yZt-lo-Ee5"/>
                         </constraints>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                     </view>
                     <navigationItem key="navigationItem" id="sJH-nl-Xta"/>
                 </viewController>
@@ -147,17 +171,25 @@
                                 <rect key="frame" x="20.5" y="433.5" width="373" height="29"/>
                                 <subviews>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
 =======
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="29"/>
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="29"/>
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="buttonOneTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="kZU-L5-Vfh"/>
                                         </connections>
                                     </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
                                         <rect key="frame" x="164" y="0.0" width="46" height="30"/>
@@ -165,11 +197,18 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
                                         <rect key="frame" x="163" y="0.0" width="46" height="29"/>
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
+                                        <rect key="frame" x="163" y="0.0" width="46" height="29"/>
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="buttonTwoTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="8Kt-9e-bmB"/>
                                         </connections>
                                     </button>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
                                         <rect key="frame" x="328" y="0.0" width="46" height="30"/>
@@ -177,6 +216,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
                                         <rect key="frame" x="327" y="0.0" width="46" height="29"/>
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
+                                        <rect key="frame" x="327" y="0.0" width="46" height="29"/>
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="buttonThreeTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="1Zx-qd-lbw"/>
@@ -184,6 +229,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-9B-0uu">
                                 <rect key="frame" x="20" y="597" width="46" height="30"/>
@@ -219,12 +265,19 @@
                                 <rect key="frame" x="20" y="157" width="374" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
 =======
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzX-ty-TkN">
                                 <rect key="frame" x="20.5" y="158.5" width="373" height="235"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="235" id="Rmm-MN-a3O"/>
                                 </constraints>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -302,7 +355,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="D3F-8i-XCD"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JzX-ty-TkN" firstAttribute="top" secondItem="U9I-G3-mKr" secondAttribute="top" constant="158.5" id="2ak-1Z-rdN"/>
@@ -324,7 +381,11 @@
                             <constraint firstItem="luw-mW-bf7" firstAttribute="top" secondItem="sVL-kW-htE" secondAttribute="bottom" constant="135" id="x74-ZC-z6A"/>
                             <constraint firstItem="luw-mW-bf7" firstAttribute="centerX" secondItem="sVL-kW-htE" secondAttribute="centerX" id="zUa-Ph-ZKZ"/>
                         </constraints>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                     </view>
                     <navigationItem key="navigationItem" id="oun-DZ-MVM"/>
                     <connections>
@@ -355,6 +416,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28e-VZ-2Is">
                                 <rect key="frame" x="165" y="98" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -380,6 +442,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
 =======
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="uUw-n6-IMT">
                                 <rect key="frame" x="20.5" y="69" width="373" height="668"/>
                                 <subviews>
@@ -410,12 +475,20 @@
                                     <constraint firstItem="sti-PF-l7F" firstAttribute="width" secondItem="uUw-n6-IMT" secondAttribute="width" multiplier="0.9" id="YBq-CZ-aBs"/>
                                 </constraints>
                             </stackView>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5pf-7L-IAc"/>
 <<<<<<< HEAD
 =======
+=======
+
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5pf-7L-IAc"/>
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uUw-n6-IMT" firstAttribute="width" secondItem="LnA-pc-clm" secondAttribute="width" multiplier="0.9" id="BEY-Gb-Qrc"/>
@@ -423,7 +496,11 @@
                             <constraint firstItem="5pf-7L-IAc" firstAttribute="bottom" secondItem="uUw-n6-IMT" secondAttribute="bottom" constant="125" id="kvo-0z-D2F"/>
                             <constraint firstItem="uUw-n6-IMT" firstAttribute="top" secondItem="5pf-7L-IAc" secondAttribute="top" constant="25" id="qMq-i5-KJQ"/>
                         </constraints>
+<<<<<<< HEAD
 >>>>>>> a619b303e2ea9ac0a2b1255fb39fab960d98660c
+=======
+
+>>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ro2-4p-3p5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
