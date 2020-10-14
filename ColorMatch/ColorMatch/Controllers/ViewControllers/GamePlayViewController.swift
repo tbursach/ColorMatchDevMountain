@@ -9,10 +9,6 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
-<<<<<<< HEAD
-=======
-
->>>>>>> e0f3d8c3b882ecfa1e91446a7fb247575da1ad88
     //MARK: - Outlets
     
     @IBOutlet weak var currentScoreLabel: UILabel!
