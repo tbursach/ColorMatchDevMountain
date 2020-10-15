@@ -23,6 +23,7 @@ class PostGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateViews()
         highScoreTableView.delegate = self
         highScoreTableView.dataSource = self
     }
@@ -47,13 +48,18 @@ class PostGameViewController: UIViewController {
     
     
     // MARK: - Class Functions
+    
+    func updateViews() {
+        scoreLabel.text = "Your Score: \(finalScore)"
+    }
+    
     func sendToMenu() {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier:"menuScreen") as! MainScreenViewController
         self.present(vc, animated: false, completion: nil)
     }
     
     func replayGame() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "gameScreen") as! GamePlayViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "navigationController") as! GamePlayViewController
         self.present(vc, animated: false, completion: nil)
     }
   
