@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A62AD2A125377760003E9FD4 /* UserScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62AD2A025377760003E9FD4 /* UserScore.swift */; };
+		A645DC532538C1D7008FC033 /* HighScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645DC522538C1D7008FC033 /* HighScoreTableViewController.swift */; };
 		AB6A2EAB2537B3E500F3D576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6A2EAA2537B3E500F3D576 /* Main.storyboard */; };
 		ABDC45CD2537702100179354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC45CC2537702100179354 /* AppDelegate.swift */; };
 		ABDC45CF2537702100179354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC45CE2537702100179354 /* SceneDelegate.swift */; };
@@ -17,12 +18,12 @@
 		B6569B46253778C500DE2CA2 /* UserScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B45253778C500DE2CA2 /* UserScoreController.swift */; };
 		B6569B4A253779A600DE2CA2 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B49253779A600DE2CA2 /* MainScreenViewController.swift */; };
 		B6569B4D25377AA700DE2CA2 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B4C25377AA700DE2CA2 /* GamePlayViewController.swift */; };
-		B6569B5025377B6000DE2CA2 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B4F25377B6000DE2CA2 /* HighScoreViewController.swift */; };
 		B6569B5325377BCA00DE2CA2 /* PostGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B5225377BCA00DE2CA2 /* PostGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A62AD2A025377760003E9FD4 /* UserScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScore.swift; sourceTree = "<group>"; };
+		A645DC522538C1D7008FC033 /* HighScoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreTableViewController.swift; sourceTree = "<group>"; };
 		AB6A2EAA2537B3E500F3D576 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ABDC45C92537702100179354 /* ColorMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDC45CC2537702100179354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		B6569B45253778C500DE2CA2 /* UserScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScoreController.swift; sourceTree = "<group>"; };
 		B6569B49253779A600DE2CA2 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		B6569B4C25377AA700DE2CA2 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
-		B6569B4F25377B6000DE2CA2 /* HighScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		B6569B5225377BCA00DE2CA2 /* PostGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,8 +127,8 @@
 			children = (
 				B6569B49253779A600DE2CA2 /* MainScreenViewController.swift */,
 				B6569B4C25377AA700DE2CA2 /* GamePlayViewController.swift */,
-				B6569B4F25377B6000DE2CA2 /* HighScoreViewController.swift */,
 				B6569B5225377BCA00DE2CA2 /* PostGameViewController.swift */,
+				A645DC522538C1D7008FC033 /* HighScoreTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A645DC532538C1D7008FC033 /* HighScoreTableViewController.swift in Sources */,
 				B6569B46253778C500DE2CA2 /* UserScoreController.swift in Sources */,
 				B6569B5325377BCA00DE2CA2 /* PostGameViewController.swift in Sources */,
 				B6569B4D25377AA700DE2CA2 /* GamePlayViewController.swift in Sources */,
@@ -211,7 +212,6 @@
 				B60CE2F62538BE1E00D53B3B /* UIColorExtension.swift in Sources */,
 				A62AD2A125377760003E9FD4 /* UserScore.swift in Sources */,
 				ABDC45CF2537702100179354 /* SceneDelegate.swift in Sources */,
-				B6569B5025377B6000DE2CA2 /* HighScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
