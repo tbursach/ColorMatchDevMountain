@@ -9,12 +9,19 @@ import UIKit
 
 class PostGameViewController: UIViewController {
 
+    // MARK: - Outlets
+    // Need to drag out the label from the storyboard to display the user's score.
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     // MARK: - Actions
+    // Need to drag out actions from the buttons on the storyboard
+    
+    // Need a textField to add a name to the score.
+    
     
     // MARK: - Class Functions
     func sendToMenu() {
