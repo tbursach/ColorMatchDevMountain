@@ -14,9 +14,16 @@ class PostGameViewController: UIViewController {
     @IBOutlet weak var highScoreTextField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
     
+    // MARK: - Properties
+    //Landing Pad
+    var finalScore: Int = GamePlayViewController.currentScore
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     // MARK: - Actions
@@ -24,10 +31,16 @@ class PostGameViewController: UIViewController {
     
     // Need a textField to add a name to the score.
     @IBAction func submitNameButtonTapped(_ sender: Any) {
+        guard let name = highScoreTextField.text, !name.isEmpty else { return }
+        let score = finalScore
+        UserScoreController.shared.createScore(name: name, score: score)
+        
     }
     @IBAction func playAgainButtonTapped(_ sender: Any) {
+        replayGame()
     }
     @IBAction func menuButtonTapped(_ sender: Any) {
+        sendToMenu()
     }
     
     
