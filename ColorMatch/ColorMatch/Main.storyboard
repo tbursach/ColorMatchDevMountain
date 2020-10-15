@@ -373,6 +373,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="highScoreTableView" destination="9xL-Xt-TXZ" id="gnP-GO-tps"/>
                         <outlet property="highScoreTextField" destination="B6S-fr-DsY" id="XZo-vT-mz8"/>
                         <outlet property="scoreLabel" destination="28e-VZ-2Is" id="ReL-Zn-WI2"/>
                     </connections>
@@ -384,7 +385,7 @@
         <!--Navigation Controller-->
         <scene sceneID="c5Y-Vy-tUy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jEX-8u-OYd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationController" automaticallyAdjustsScrollViewInsets="NO" id="jEX-8u-OYd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xv1-Nf-ACi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

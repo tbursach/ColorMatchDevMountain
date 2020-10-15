@@ -23,7 +23,7 @@ class UserScoreController {
         //Sorts the array of UserScores by highest score.
         placeholderScores = placeholderScores.sorted { $0.score < $1.score }
         //This gives the top five highest scores
-        scores = Array(placeholderScores[0...4])
+        scores = placeholderScores
         
         //local persistence With Core Data?
         

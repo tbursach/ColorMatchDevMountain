@@ -18,12 +18,13 @@ class GamePlayViewController: UIViewController {
     let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
     var gameInt = 60
     var gameTimer = Timer()
-    var currentScore: Int = 0
+    static var currentScore: Int = 0
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpColorStrings()
         setUpLabel()
         initalizeGameTimer()
     }
@@ -88,8 +89,8 @@ class GamePlayViewController: UIViewController {
      }
     
     func setUpScore() {
-        currentScore = 0
-        currentScoreLabel.text = "\(currentScore)"
+        GamePlayViewController.currentScore = 0
+        currentScoreLabel.text = "\(GamePlayViewController.currentScore)"
     }
     
     // Returns a random color from an array of colors
@@ -105,14 +106,14 @@ class GamePlayViewController: UIViewController {
          let indexNumber = colors.firstIndex(of: colorLabel.textColor)
          if sender == indexNumber {
              addPointToScore()
-             currentScoreLabel.text = "\(currentScore)"
+            currentScoreLabel.text = "\(GamePlayViewController.currentScore)"
              setUpLabel()
             setUpColorStrings()
          }
      }
     
     func addPointToScore() {
-        currentScore += 5
+        GamePlayViewController.currentScore += 5
     }
     
     func setUpColorStrings() {
