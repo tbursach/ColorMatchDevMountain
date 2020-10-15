@@ -9,8 +9,13 @@ import UIKit
 
 class GamePlayViewController: UIViewController {
     
+    //MARK: - Outlets
+    
+    @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet weak var currentScoreLabel: UILabel!
+    @IBOutlet weak var timeRemainingLabel: UILabel!
 
-
+    let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
     var gameInt = 60
     var gameTimer = Timer()
     
@@ -18,6 +23,7 @@ class GamePlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpLabel()
         initalizeGameTimer()
     }
     
@@ -45,11 +51,29 @@ class GamePlayViewController: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
 
+    func setUpLabel() {
+        colorLabel.textColor = getRandomColor()
+    }
 
+    func getRandomColor() -> UIColor {
+       let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
+       let randomNumber = arc4random_uniform(UInt32(colors.count))
+       
+       return colors[Int(randomNumber)]
+   }
+    
+    func checkIfButtonValid(sender: Int) {
+        var indexNumber = colors.firstIndex(of: colorLabel.textColor)
+        if sender == indexNumber {
+            
+            setUpLabel()
+        }
+    }
     
     //MARK: - Actions
     
-    @IBAction func buttonOneTapped(_ sender: Any) {
+    @IBAction func buttonOneTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
     }
     
     @IBAction func buttonTwoTapped(_ sender: Any) {
