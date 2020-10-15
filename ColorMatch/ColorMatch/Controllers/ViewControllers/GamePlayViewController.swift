@@ -27,6 +27,7 @@ class GamePlayViewController: UIViewController {
         setUpColorStrings()
         setUpLabel()
         initalizeGameTimer()
+        setUpScore()
     }
     
     //MARK: - Actions
