@@ -13,6 +13,7 @@ class PostGameViewController: UIViewController {
     // Need to drag out the label from the storyboard to display the user's score.
     @IBOutlet weak var highScoreTextField: UITextField!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var highScoreTableView: UITableView!
     
     // MARK: - Properties
     //Landing Pad
@@ -22,8 +23,8 @@ class PostGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        highScoreTableView.delegate = self
+        highScoreTableView.dataSource = self
     }
     
     // MARK: - Actions
@@ -34,6 +35,7 @@ class PostGameViewController: UIViewController {
         guard let name = highScoreTextField.text, !name.isEmpty else { return }
         let score = finalScore
         UserScoreController.shared.createScore(name: name, score: score)
+        highScoreTableView.reloadData()
         
     }
     @IBAction func playAgainButtonTapped(_ sender: Any) {
@@ -61,7 +63,7 @@ class PostGameViewController: UIViewController {
 extension PostGameViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return UserScoreController.shared.scores.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
