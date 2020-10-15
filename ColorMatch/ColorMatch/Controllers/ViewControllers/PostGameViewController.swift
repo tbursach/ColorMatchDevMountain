@@ -28,6 +28,11 @@ class PostGameViewController: UIViewController {
         highScoreTableView.dataSource = self
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        finalScore = 0
+    }
+    
     // MARK: - Actions
     // Need to drag out actions from the buttons on the storyboard
     
