@@ -10,16 +10,17 @@ import UIKit
 class GamePlayViewController: UIViewController {
     
     //MARK: - Outlets
-    
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var currentScoreLabel: UILabel!
     @IBOutlet weak var timeRemainingLabel: UILabel!
 
+    // MARK: - Properties
     let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
     var gameInt = 60
     var gameTimer = Timer()
+    var currentScore: Int = 0
     
-    
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,83 +28,91 @@ class GamePlayViewController: UIViewController {
         initalizeGameTimer()
     }
     
-    
-    func initalizeGameTimer() {
-        gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GamePlayViewController.game), userInfo: nil, repeats: true)
-        gameInt = 60
-        //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
-    }
-    
-    @objc func game() {
-         gameInt -= 1
-         //timerLabel.text = String(gameInt) Set to appropriate timer label outlet
-        
-        if gameInt == 0 {
-            
-            gameTimer.invalidate()
-            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GamePlayViewController.gameEnds), userInfo: nil, repeats: false)
-            
-        }
-    }
-    
-    @objc func gameEnds() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
-        self.present(vc, animated: false, completion: nil)
-    }
-
-    func setUpLabel() {
-        colorLabel.textColor = getRandomColor()
-    }
-
-    func getRandomColor() -> UIColor {
-       let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
-       let randomNumber = arc4random_uniform(UInt32(colors.count))
-       
-       return colors[Int(randomNumber)]
-   }
-    
-    func checkIfButtonValid(sender: Int) {
-        var indexNumber = colors.firstIndex(of: colorLabel.textColor)
-        if sender == indexNumber {
-            
-            setUpLabel()
-        }
-    }
-    
     //MARK: - Actions
-    
     @IBAction func buttonOneTapped(_ sender: UIButton) {
         checkIfButtonValid(sender: sender.tag)
     }
-    
-    @IBAction func buttonTwoTapped(_ sender: Any) {
+    @IBAction func buttonTwoTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonThreeTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonFourTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonFiveTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonSixTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonSevenTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonEightTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
+    }
+    @IBAction func buttonNineTapped(_ sender: UIButton) {
+        checkIfButtonValid(sender: sender.tag)
     }
     
-    @IBAction func buttonThreeTapped(_ sender: Any) {
-    }
     
-    @IBAction func buttonFourTapped(_ sender: Any) {
-    }
-    
-    @IBAction func buttonFiveTapped(_ sender: Any) {
-    }
-    
-    @IBAction func buttonSixTapped(_ sender: Any) {
-    }
-    
-    @IBAction func buttonSevenTapped(_ sender: Any) {
-    }
-    
-    @IBAction func buttonEightTapped(_ sender: Any) {
-    }
-    
-    @IBAction func buttonNineTapped(_ sender: Any) {
-    }
-    
-    
-    
+    // MARK: - Class Functions
+    // Starts the game timer
+    func initalizeGameTimer() {
+         gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GamePlayViewController.game), userInfo: nil, repeats: true)
+         gameInt = 60
+         timeRemainingLabel.text = String(gameInt)
+     }
+     // Updates the game timer.
+     @objc func game() {
+          gameInt -= 1
+          timeRemainingLabel.text = String(gameInt)
+         
+         if gameInt == 0 {
+             
+             gameTimer.invalidate()
+             Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(GamePlayViewController.gameEnds), userInfo: nil, repeats: false)
+         }
+     }
+     
+    // Goes to endscreen when gameends.
+     @objc func gameEnds() {
+         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "postGameScreen") as!  PostGameViewController //Need to set the appropriate storyboard identifier for the postgamescreen.
+         self.present(vc, animated: false, completion: nil)
+     }
 
-
+     func setUpLabel() {
+         colorLabel.textColor = getRandomColor()
+     }
+    
+    func setUpScore() {
+        currentScore = 0
+        currentScoreLabel.text = "\(currentScore)"
+    }
+    
+    // Returns a random color from an array of colors
+     func getRandomColor() -> UIColor {
+        let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
+        let randomNumber = arc4random_uniform(UInt32(colors.count))
+        
+        return colors[Int(randomNumber)]
+    }
+     
+    // Checks if the button pressed matches the color displayed by the label. If a match, it adds a point to the score and makes the label change to a different color.
+     func checkIfButtonValid(sender: Int) {
+         let indexNumber = colors.firstIndex(of: colorLabel.textColor)
+         if sender == indexNumber {
+             addPointToScore()
+             currentScoreLabel.text = "\(currentScore)"
+             setUpLabel()
+         }
+     }
+    
+    func addPointToScore() {
+        currentScore += 5
+    }
 }
 
     
