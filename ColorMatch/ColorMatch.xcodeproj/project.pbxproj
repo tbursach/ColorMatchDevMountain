@@ -13,6 +13,7 @@
 		ABDC45CF2537702100179354 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDC45CE2537702100179354 /* SceneDelegate.swift */; };
 		ABDC45D62537703000179354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABDC45D52537703000179354 /* Assets.xcassets */; };
 		ABDC45D92537703000179354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABDC45D72537703000179354 /* LaunchScreen.storyboard */; };
+		B60CE2F62538BE1E00D53B3B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60CE2F52538BE1E00D53B3B /* UIColorExtension.swift */; };
 		B6569B46253778C500DE2CA2 /* UserScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B45253778C500DE2CA2 /* UserScoreController.swift */; };
 		B6569B4A253779A600DE2CA2 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B49253779A600DE2CA2 /* MainScreenViewController.swift */; };
 		B6569B4D25377AA700DE2CA2 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6569B4C25377AA700DE2CA2 /* GamePlayViewController.swift */; };
@@ -29,6 +30,7 @@
 		ABDC45D52537703000179354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABDC45D82537703000179354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABDC45DA2537703000179354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60CE2F52538BE1E00D53B3B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		B6569B45253778C500DE2CA2 /* UserScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScoreController.swift; sourceTree = "<group>"; };
 		B6569B49253779A600DE2CA2 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		B6569B4C25377AA700DE2CA2 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
@@ -86,12 +88,21 @@
 		ABDC45CB2537702100179354 /* ColorMatch */ = {
 			isa = PBXGroup;
 			children = (
+				B60CE2F22538BCAA00D53B3B /* HelpersAndExtensions */,
 				B6569B42253777FF00DE2CA2 /* Controllers */,
 				A62AD29F25377743003E9FD4 /* Model */,
 				A62AD29C25377190003E9FD4 /* Resources */,
 				AB6A2EAA2537B3E500F3D576 /* Main.storyboard */,
 			);
 			path = ColorMatch;
+			sourceTree = "<group>";
+		};
+		B60CE2F22538BCAA00D53B3B /* HelpersAndExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				B60CE2F52538BE1E00D53B3B /* UIColorExtension.swift */,
+			);
+			path = HelpersAndExtensions;
 			sourceTree = "<group>";
 		};
 		B6569B42253777FF00DE2CA2 /* Controllers */ = {
@@ -197,6 +208,7 @@
 				B6569B4D25377AA700DE2CA2 /* GamePlayViewController.swift in Sources */,
 				B6569B4A253779A600DE2CA2 /* MainScreenViewController.swift in Sources */,
 				ABDC45CD2537702100179354 /* AppDelegate.swift in Sources */,
+				B60CE2F62538BE1E00D53B3B /* UIColorExtension.swift in Sources */,
 				A62AD2A125377760003E9FD4 /* UserScore.swift in Sources */,
 				ABDC45CF2537702100179354 /* SceneDelegate.swift in Sources */,
 				B6569B5025377B6000DE2CA2 /* HighScoreViewController.swift in Sources */,
