@@ -59,7 +59,7 @@ class PostGameViewController: UIViewController {
     }
     
     func replayGame() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "navigationController") as! GamePlayViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "gameScreen") as! GamePlayViewController
         self.present(vc, animated: false, completion: nil)
     }
   

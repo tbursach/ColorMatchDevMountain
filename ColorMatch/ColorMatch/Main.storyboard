@@ -11,7 +11,7 @@
         <!--Color Match-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="menuScreen" id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuScreen" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MainScreenViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
         <!--High Scores-->
         <scene sceneID="2r9-lh-8aj">
             <objects>
-                <tableViewController id="F7h-0T-Tny" customClass="HighScoreTableViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="F7h-0T-Tny" customClass="HighScoreTableViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2eE-kz-b5U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
         <!--Game Play View Controller-->
         <scene sceneID="3Pd-py-Wqu">
             <objects>
-                <viewController storyboardIdentifier="gameScreen" id="ZCV-x3-9U3" customClass="GamePlayViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameScreen" modalPresentationStyle="fullScreen" id="ZCV-x3-9U3" customClass="GamePlayViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U9I-G3-mKr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,7 +282,7 @@
         <!--Post Game View Controller-->
         <scene sceneID="bDO-jg-R9T">
             <objects>
-                <viewController storyboardIdentifier="postGameScreen" id="WA1-4g-c4D" customClass="PostGameViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="postGameScreen" modalPresentationStyle="fullScreen" id="WA1-4g-c4D" customClass="PostGameViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LnA-pc-clm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,6 +304,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3i-yF-pDK">
                                         <rect key="frame" x="162" y="194.5" width="49" height="30"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Submit"/>
                                         <connections>
                                             <action selector="submitNameButtonTapped:" destination="WA1-4g-c4D" eventType="touchUpInside" id="57B-tO-bO1"/>
