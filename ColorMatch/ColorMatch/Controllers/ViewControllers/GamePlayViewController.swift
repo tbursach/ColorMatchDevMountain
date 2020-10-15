@@ -90,7 +90,8 @@ class GamePlayViewController: UIViewController {
      }
     
     func setUpScore() {
-        
+        GamePlayViewController.currentScore = 0
+        currentScoreLabel.text = "\(GamePlayViewController.currentScore)"
     }
     
     // Returns a random color from an array of colors
