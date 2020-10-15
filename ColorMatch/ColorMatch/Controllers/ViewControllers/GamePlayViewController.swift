@@ -85,9 +85,7 @@ class GamePlayViewController: UIViewController {
          self.present(vc, animated: false, completion: nil)
      }
 
-     func setUpLabel() {
-         colorLabel.textColor = getRandomColor()
-     }
+     
     
     func setUpScore() {
         
