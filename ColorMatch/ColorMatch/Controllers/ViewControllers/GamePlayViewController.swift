@@ -26,6 +26,7 @@ class GamePlayViewController: UIViewController {
         
         setUpLabel()
         initalizeGameTimer()
+        colorLabel.backgroundColor = .lightGray
     }
     
     //MARK: - Actions
@@ -62,7 +63,7 @@ class GamePlayViewController: UIViewController {
     // Starts the game timer
     func initalizeGameTimer() {
          gameTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GamePlayViewController.game), userInfo: nil, repeats: true)
-         gameInt = 60
+         gameInt = 10
          timeRemainingLabel.text = String(gameInt)
      }
      // Updates the game timer.

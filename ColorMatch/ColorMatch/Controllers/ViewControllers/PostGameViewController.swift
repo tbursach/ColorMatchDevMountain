@@ -11,6 +11,8 @@ class PostGameViewController: UIViewController {
 
     // MARK: - Outlets
     // Need to drag out the label from the storyboard to display the user's score.
+    @IBOutlet weak var highScoreTextField: UITextField!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
@@ -21,6 +23,12 @@ class PostGameViewController: UIViewController {
     // Need to drag out actions from the buttons on the storyboard
     
     // Need a textField to add a name to the score.
+    @IBAction func submitNameButtonTapped(_ sender: Any) {
+    }
+    @IBAction func playAgainButtonTapped(_ sender: Any) {
+    }
+    @IBAction func menuButtonTapped(_ sender: Any) {
+    }
     
     
     // MARK: - Class Functions
