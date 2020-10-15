@@ -19,14 +19,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5mK-Sk-ajc">
                                 <rect key="frame" x="20.5" y="113" width="373" height="399"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Tap on the button that matches the color of the word, not what the text says" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-9P-dmI">
-                                        <rect key="frame" x="5" y="0.0" width="363" height="315"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Tap on the button that matches the color of the word, not what the text says! Good luck!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-9P-dmI">
+                                        <rect key="frame" x="0.5" y="0.0" width="372.5" height="315"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="762-hQ-F7x">
                                         <rect key="frame" x="150" y="327" width="73" height="30"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Play Game"/>
                                         <connections>
                                             <segue destination="ZCV-x3-9U3" kind="show" id="b4q-IO-U9j"/>
@@ -34,6 +35,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwz-z5-Q1z">
                                         <rect key="frame" x="144.5" y="369" width="84" height="30"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="High Scores"/>
                                         <connections>
                                             <segue destination="F7h-0T-Tny" kind="show" id="Ybw-Pj-D5g"/>
@@ -43,7 +45,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5mK-Sk-ajc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZXg-SA-3Pw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5mK-Sk-ajc" secondAttribute="bottom" constant="350" id="djd-fX-i2e"/>
@@ -57,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="103.79464285714285"/>
         </scene>
-        <!--High Score Table View Controller-->
+        <!--High Scores-->
         <scene sceneID="2r9-lh-8aj">
             <objects>
                 <tableViewController id="F7h-0T-Tny" customClass="HighScoreTableViewController" customModule="ColorMatch" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,6 +67,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="highScoreCell" textLabel="1bP-mZ-aRj" detailTextLabel="Bpz-sa-G1s" style="IBUITableViewCellStyleValue1" id="LBj-YS-2RW">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -96,7 +99,7 @@
                             <outlet property="delegate" destination="F7h-0T-Tny" id="Vdi-LU-5Ye"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="W1X-wm-47Q"/>
+                    <navigationItem key="navigationItem" title="High Scores" id="W1X-wm-47Q"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6J-Pz-80l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,26 +113,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-kW-htE">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="sVL-kW-htE">
                                 <rect key="frame" x="20.5" y="433.5" width="373" height="29"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fA3-xC-OuK">
-                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="29"/>
-                                        <state key="normal" title="Red"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <state key="normal" title="Red">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonOneTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="kZU-L5-Vfh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7T7-03-1MW">
-                                        <rect key="frame" x="163.5" y="0.0" width="46" height="29"/>
-                                        <state key="normal" title="Blue"/>
+                                        <rect key="frame" x="141" y="0.0" width="91" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Blue">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonTwoTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="8Kt-9e-bmB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd8-dx-CeW">
-                                        <rect key="frame" x="327.5" y="0.0" width="45.5" height="29"/>
-                                        <state key="normal" title="Yellow"/>
+                                        <rect key="frame" x="282" y="0.0" width="91" height="29"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Yellow">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonThreeTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="1Zx-qd-lbw"/>
                                         </connections>
@@ -145,52 +157,70 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="luw-mW-bf7">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="luw-mW-bf7">
                                 <rect key="frame" x="20.5" y="597.5" width="373" height="31"/>
                                 <subviews>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCa-9B-0uu">
-                                        <rect key="frame" x="0.0" y="0.0" width="38" height="31"/>
-                                        <state key="normal" title="Black"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Black">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonFourTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="tFs-EB-bO2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrB-Yx-hfy">
-                                        <rect key="frame" x="156" y="0.0" width="40" height="31"/>
-                                        <state key="normal" title="White"/>
+                                        <rect key="frame" x="141" y="0.0" width="91" height="31"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="White">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonFiveTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="wfm-nL-kWv"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-nm-FtK">
-                                        <rect key="frame" x="314" y="0.0" width="59" height="31"/>
-                                        <state key="normal" title="Green"/>
+                                        <rect key="frame" x="282" y="0.0" width="91" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Green">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonSixTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="cNY-YF-Uol"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="118" translatesAutoresizingMaskIntoConstraints="NO" id="CSa-fC-ebl">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CSa-fC-ebl">
                                 <rect key="frame" x="20.5" y="773.5" width="373" height="30"/>
                                 <subviews>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJA-ai-p2z">
-                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
-                                        <state key="normal" title="Purple"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <state key="normal" title="Purple">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonSevenTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="vcd-Ea-pZx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdW-mI-5QT">
-                                        <rect key="frame" x="160" y="0.0" width="44" height="30"/>
-                                        <state key="normal" title="Brown"/>
+                                        <rect key="frame" x="141" y="0.0" width="91" height="30"/>
+                                        <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Brown">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonEightTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="9Uv-Rx-rs4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-pJ-eBn">
-                                        <rect key="frame" x="322" y="0.0" width="51" height="30"/>
-                                        <state key="normal" title="Orange"/>
+                                        <rect key="frame" x="282" y="0.0" width="91" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Orange">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="buttonNineTapped:" destination="ZCV-x3-9U3" eventType="touchUpInside" id="3EN-MP-bAG"/>
                                         </connections>
@@ -216,7 +246,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D3F-8i-XCD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="JzX-ty-TkN" firstAttribute="top" secondItem="U9I-G3-mKr" secondAttribute="top" constant="158.5" id="2ak-1Z-rdN"/>
                             <constraint firstItem="sVL-kW-htE" firstAttribute="top" secondItem="JzX-ty-TkN" secondAttribute="bottom" constant="40" id="9Ga-PJ-2eW"/>
@@ -335,7 +365,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5pf-7L-IAc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ad8-NS-E2S" firstAttribute="centerX" secondItem="5pf-7L-IAc" secondAttribute="centerX" id="Fu0-gz-3ad"/>
                             <constraint firstItem="Ad8-NS-E2S" firstAttribute="width" secondItem="LnA-pc-clm" secondAttribute="width" multiplier="0.9" id="Hl4-hJ-eYv"/>
@@ -373,6 +403,24 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
