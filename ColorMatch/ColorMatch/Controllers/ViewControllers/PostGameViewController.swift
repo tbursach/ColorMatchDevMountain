@@ -13,6 +13,19 @@ class PostGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    // MARK: - Actions
+    
+    // MARK: - Class Functions
+    func sendToMenu() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier:"menuScreen") as! MainScreenViewController
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    func replayGame() {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "gameScreen") as! GamePlayViewController
+        self.present(vc, animated: false, completion: nil)
+    }
   
 }// End of Class
 
