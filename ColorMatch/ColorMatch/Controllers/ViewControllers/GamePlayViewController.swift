@@ -26,7 +26,6 @@ class GamePlayViewController: UIViewController {
         
         setUpLabel()
         initalizeGameTimer()
-        colorLabel.backgroundColor = .lightGray
     }
     
     //MARK: - Actions
@@ -108,11 +107,23 @@ class GamePlayViewController: UIViewController {
              addPointToScore()
              currentScoreLabel.text = "\(currentScore)"
              setUpLabel()
+            setUpColorStrings()
          }
      }
     
     func addPointToScore() {
         currentScore += 5
+    }
+    
+    func setUpColorStrings() {
+        colorLabel.text = changeColorLabel()
+    }
+    
+    func changeColorLabel() -> String {
+        let colorLabels = ["Red", "Blue", "Yellow", "Black", "White", "Green", "Purple", "Brown", "Orange"]
+        let randomLabel = arc4random_uniform(UInt32(colorLabels.count))
+        
+        return colorLabels[Int(randomLabel)]
     }
 }
 
