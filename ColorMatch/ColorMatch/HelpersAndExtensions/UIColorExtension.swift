@@ -9,7 +9,7 @@ import UIKit
 
 extension UIColor {
     
-    class func getRandomColor() -> UIColor {
+    static func getRandomColor() -> UIColor {
         let colors = [UIColor.red, UIColor.blue, UIColor.yellow, UIColor.black, UIColor.white, UIColor.green, UIColor.purple, UIColor.brown, UIColor.orange]
         let randomNumber = arc4random_uniform(UInt32(colors.count))
         
