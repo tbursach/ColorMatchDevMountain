@@ -27,7 +27,7 @@ class GamePlayViewController: UIViewController {
         setUpColorStrings()
         setUpLabel()
         initalizeGameTimer()
-        setScoreUp()
+        setUpScore()
     }
     
     //MARK: - Actions
@@ -89,7 +89,7 @@ class GamePlayViewController: UIViewController {
         colorLabel.textColor = getRandomColor()
     }
     
-    func setScoreUp() {
+    func setUpScore() {
         GamePlayViewController.currentScore = 0
         currentScoreLabel.text = "\(GamePlayViewController.currentScore)"
     }
